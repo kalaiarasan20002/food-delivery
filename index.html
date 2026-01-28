@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="font-mweb lg:font-desktop" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link src="https://cdn.jsdelivr.net/npm/@remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Foodman-codewithkalai</title>
+    </head>
+    <body>
+         <nav>
+             <div class="nav_header">
+             <div class="logo nav_logo">
+           <a href="#">Food <span>Man</span>
+           </div>
+             <div class="nav__menu__btn" id="menu-btn">
+                 <span><i class="ri-menu-line"></i></span>
+             </div>
+             </div>
+               <ul class="nav__links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Special</a></li>
+                <li><a href="#">Chef</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Contact us</a></li>
+               </ul>
+               <div class="nav_btn">
+                 <button class="btn"><i class="ri-shopping-bag-fill"></i>
+                 </div>
+                </nav>
+              <section class="section__container header__container" id="home">
+                <div class="header__image">
+                    <img src="header.jpg" alt="header__image">
+                </div>
+                <div class="header__content">
+                <h1>Meet, Eat & Enjoy The <span>True Taste</span></h1>
+                <p class="section__description">
+                   Taste in food refers to the sensory perception of flavor—sweet, sour, salty, bitter, or umami—detected by taste buds on the tongue when food is eaten. It is both the action of sampling food to check its flavor (verb) and the specific, distinguishing, or enjoyable quality (flavor) of that food
+                </p>
+                <div class="header__btn">
+                    <button class="btn">Get Started</button>
+                </div>
+                </div>
+               </section>
+           <script> 
+            const menuBtn = Document.getElementByid('menu-Btn');
+            const navLinks = Document.getElementByid('nav-links');
+           
+           menuBtn.addEventListner('click',() => {
+               navLinks.classList.toggle('open');
+           });
+
+            Window.addEventListner('scroll',() => {
+                if (window.scroll > 0) {
+                    document.querySelector('nav').classList.add('scrolled');
+                } else {
+                       document.querySelector('nav').classList.remove('scrolled');
+                }
+            });
+</script>
+            </body>
+        </html>         
