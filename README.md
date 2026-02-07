@@ -45,6 +45,9 @@ This project focuses on **JavaScript logic**, not just UI.
 - **JavaScript (Vanilla JS)** – Business logic & interactivity
 
 ---
+👤 Author
 
-## 📁 Project Structure
+Kalai Arasan
+
+GitHub: https://github.com/kalaiarasan20002
 
